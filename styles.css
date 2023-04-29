@@ -173,6 +173,24 @@ html {
   align-items: center;
   height: 100%;
 }
+.web-container .header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  margin: 20px 0 40px;
+  padding: 15px;
+  color: #fff;
+}
+.web-container .header-container h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  word-spacing: 5px;
+}
+.web-container .header-container h2 {
+  font-size: 1.2rem;
+}
 .web-container .booking-container {
   display: flex;
   text-align: center;
@@ -196,7 +214,10 @@ html {
   border-bottom: 0.8px solid #9e9e9e;
   width: 80%;
 }
-.web-container .booking-container button {
+.web-container .booking-container .booking-button {
+  width: 100%;
+}
+.web-container .booking-container .booking-button button {
   width: 100%;
   height: 80px;
   background-color: #ff7757;
@@ -216,24 +237,6 @@ html {
   .web-container .booking-container .booking-item {
     padding: 0 15px 0 15px;
   }
-}
-.web-container .header-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 40%;
-  margin: 20px 0 40px;
-  padding: 15px;
-  color: #fff;
-}
-.web-container .header-container h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  word-spacing: 5px;
-}
-.web-container .header-container h2 {
-  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

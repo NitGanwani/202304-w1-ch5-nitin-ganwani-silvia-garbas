@@ -29,6 +29,27 @@
   align-items: center;
   height: 100%;
 
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    margin: 20px 0 40px;
+    padding: 15px;
+    color: #fff;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      word-spacing: 5px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
   .booking-container {
     display: flex;
     text-align: center;
@@ -54,14 +75,18 @@
       }
     }
 
-    button {
+    .booking-button {
       width: 100%;
-      height: 80px;
-      background-color: #ff7757;
-      border-radius: 0 0 20px 20px;
-      color: #fff;
-      border: none;
-      font-size: 1.3rem;
+
+      button {
+        width: 100%;
+        height: 80px;
+        background-color: #ff7757;
+        border-radius: 0 0 20px 20px;
+        color: #fff;
+        border: none;
+        font-size: 1.3rem;
+      }
     }
 
     @include desktop {
@@ -77,27 +102,6 @@
       .booking-item {
         padding: 0 15px 0 15px;
       }
-    }
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 40%;
-    margin: 20px 0 40px;
-    padding: 15px;
-    color: #fff;
-
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      margin-bottom: 30px;
-      word-spacing: 5px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
     }
   }
 }
