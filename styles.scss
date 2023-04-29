@@ -69,3 +69,42 @@
     border: none;
   }
 }
+
+
+.menu, .information, .contact-info  {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-star;
+  margin:20px;
+  height: 20%;
+}
+
+.footer-container{
+  height: 100%;
+}
+
+.information-title, .contact-info-title,  .social-networks-title, .menu-title{
+  margin: 8px 0;
+  font-size: 1,5rem;
+  font-weight: bold;
+}
+
+.contact-info-list, .information-list, .menu-list{
+  font-size: 1,1rem;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+}
+
+.footer-container {
+  color:#fff;
+  background-color: black;
+  font-family: 'Rubik', sans-serif;
+}
+
+.copyright {
+  font-size:0,6rem;
+}
