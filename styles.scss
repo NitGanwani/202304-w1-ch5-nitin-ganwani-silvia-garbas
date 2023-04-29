@@ -2,8 +2,13 @@
 @use "global";
 @import "responsive";
 
+$primary-font: "Playfair Display", serif;
+$secondary-font: "Rubik", sans-serif;
+
 .city-image {
   background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @include desktop {
@@ -13,13 +18,25 @@
 }
 
 .nav-bar {
-  height: 10%;
   display: flex;
-  padding: 30px 0 0 30px;
   align-items: center;
 
   .nav-bar-logo {
     display: flex;
+  }
+
+  img {
+    max-width: 40%;
+    padding: 10px 0 0 10px;
+  }
+}
+
+@include desktop {
+  .nav-bar {
+    img {
+      max-width: 25%;
+      padding: 20px 0 0 20px;
+    }
   }
 }
 
@@ -43,10 +60,28 @@
       line-height: 1.2;
       margin-bottom: 30px;
       word-spacing: 5px;
+      font-family: $primary-font;
     }
 
     h2 {
       font-size: 1.2rem;
+      font-family: $secondary-font;
+    }
+  }
+
+  @include desktop {
+    .header-container {
+      width: 90%;
+      justify-content: center;
+      margin: 60px 0 40px;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -59,6 +94,7 @@
     align-items: center;
     background-color: #fff;
     border-radius: 20px;
+    font-family: $primary-font;
 
     .booking-info {
       text-align: left;
@@ -85,62 +121,88 @@
         border-radius: 0 0 20px 20px;
         color: #fff;
         border: none;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
       }
     }
+  }
 
-    @include desktop {
-      .booking-container {
-        flex-direction: row;
-      }
+  @include desktop {
+    .booking-container {
+      flex-direction: row;
+      width: 90%;
+      height: 25%;
 
       .booking-info {
         flex-direction: row;
-        width: 90%;
+        width: 100%;
+        margin: 0 15px;
+
+        .booking-item {
+          padding: 0 15px 0 15px;
+          margin: 0 35px;
+
+          .line {
+            width: 100%;
+          }
+        }
       }
 
-      .booking-item {
-        padding: 0 15px 0 15px;
+      .booking-button {
+        width: 25%;
+        height: 100%;
+
+        button {
+          width: 100%;
+          height: 100%;
+          border-radius: 0 20px 20px 0;
+        }
       }
     }
   }
 }
 
-
-.menu, .information, .contact-info  {
-  display:flex;
+.menu,
+.information,
+.contact-info {
+  display: flex;
   flex-direction: column;
   align-items: flex-star;
-  margin:20px;
+  margin: 20px;
   height: 20%;
 }
 
-.footer-container{
+.footer-container {
   height: 100%;
 }
 
-.information-title, .contact-info-title,  .social-networks-title, .menu-title{
+.information-title,
+.contact-info-title,
+.social-networks-title,
+.menu-title {
   margin: 8px 0;
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
   font-weight: bold;
 }
 
-.contact-info-list, .information-list, .menu-list{
-  font-size: 1,1rem;
+.contact-info-list,
+.information-list,
+.menu-list {
+  font-size: 1, 1rem;
 }
 
 .social-networks {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .footer-container {
-  color:#fff;
+  color: #fff;
   background-color: black;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .copyright {
-  font-size:0,6rem;
+  font-size: 0, 6rem;
 }
