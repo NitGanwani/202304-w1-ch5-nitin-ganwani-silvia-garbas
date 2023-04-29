@@ -315,7 +315,9 @@ html {
   font-weight: bold;
 }
 
-.contact-info-list, .information-list, .menu-list {
+.contact-info-list,
+.information-list,
+.menu-list {
   font-size: 1.1rem;
   padding: 8px 0;
   line-height: 1.5;
