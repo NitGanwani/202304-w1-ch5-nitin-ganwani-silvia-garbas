@@ -162,47 +162,65 @@ $secondary-font: "Rubik", sans-serif;
   }
 }
 
-.menu,
-.information,
-.contact-info {
-  display: flex;
+.footer-container{
+  height: 100%;
+  color:#fff;
+  background-color: #172432;
+  font-family: 'Rubik', sans-serif;
+}
+
+.travellian-logo {
+    display: flex;
+    text-align: center;
+    padding: 2.6rem 1.3rem 0.6rem;
+}
+
+.menu, 
+.information, 
+.contact-info  {
+  display:flex;
   flex-direction: column;
   align-items: flex-star;
   margin: 20px;
   height: 20%;
 }
 
-.footer-container {
-  height: 100%;
-}
-
 .information-title,
-.contact-info-title,
-.social-networks-title,
-.menu-title {
+.contact-info-title,  
+.social-networks-title, 
+.menu-title{
   margin: 8px 0;
-  font-size: 1, 5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.contact-info-list,
-.information-list,
-.menu-list {
-  font-size: 1, 1rem;
+.contact-info-list, .information-list, .menu-list{
+  font-size: 1.1rem;
+  padding: 8px 0;
+  line-height: 1.5;
+
 }
 
 .social-networks {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-.footer-container {
-  color: #fff;
-  background-color: black;
-  font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px;
+    width: 60%;
+    justify-content: space-around;
 }
 
 .copyright {
-  font-size: 0, 6rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
 }
+
+
+.social-networks-title {
+  margin: 20px;
+}
+
