@@ -4,7 +4,6 @@ $breakpoint_tablet_portrait: 992px;
 $breakpoint_desktop: 1000px;
 $breakpoint_desktop_xxl: 1440px;
 
-// SCSS Mixins
 @mixin mobile {
   @media only screen and (min-width: #{$breakpoint_mobile}) {
     @content;
