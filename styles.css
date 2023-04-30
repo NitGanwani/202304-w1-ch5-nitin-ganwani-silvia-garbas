@@ -343,20 +343,31 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   color: #fff;
   background-color: #172432;
   font-family: "Rubik", sans-serif;
 }
-
-.travellian-logo {
+.footer-container .footer-logo {
+  line-height: 2;
+}
+.footer-container .footer-logo img {
   display: flex;
   text-align: center;
   padding: 2.6rem 1.3rem 0.6rem;
 }
+.footer-container .footer-logo h2 {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
 .menu,
 .information,
-.contact-info {
+.contact-info,
+.social-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -389,17 +400,34 @@ html {
   width: 60%;
   justify-content: space-around;
 }
-
-.copyright {
-  font-size: 0.7rem;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 20px;
-  margin-bottom: 20px;
+.social-networks img {
+  padding: 10px;
 }
 
 .social-networks-title {
   margin: 20px;
+}
+
+@media only screen and (min-width: 1205px) {
+  .footer-container {
+    max-height: 40%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 3;
+  }
+  .footer-container .footer-logo {
+    line-height: 3;
+  }
+  .footer-container .footer-logo h2 {
+    font-size: 1rem;
+  }
+  .footer-container .contact-info-list,
+  .footer-container .information-list,
+  .footer-container .menu-list {
+    font-size: 1.3rem;
+    padding: 8px 0;
+    line-height: 1.8;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
