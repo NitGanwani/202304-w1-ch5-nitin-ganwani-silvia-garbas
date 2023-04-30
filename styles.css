@@ -304,7 +304,7 @@ html {
 .web-container .booking-container .booking-button button:hover {
   background-color: #ffd2c7;
   color: #ff7757;
-  font-size: 1.7;
+  font-size: 1.7rem;
   border: 3px solid #ff7757;
   transition: 0.5s;
 }
