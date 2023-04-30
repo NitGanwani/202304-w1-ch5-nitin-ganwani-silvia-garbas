@@ -32,17 +32,6 @@ $secondary-font: "Rubik", sans-serif;
     justify-content: space-between;
     width: 100%;
 
-    @include desktop {
-      img {
-        max-width: 25%;
-        padding: 20px 0 0 20px;
-      }
-    }
-
-    .nav-list {
-      display: none;
-    }
-
     img {
       max-width: 40%;
       padding: 10px 10px 0 10px;
@@ -53,7 +42,16 @@ $secondary-font: "Rubik", sans-serif;
         display: none;
       }
 
-      .nav-list {
+      img {
+        max-width: 25%;
+        padding: 20px 0 0 20px;
+      }
+    }
+
+    .nav-list {
+      display: none;
+
+      @include desktop {
         display: flex;
         width: 50%;
         justify-content: space-around;
@@ -79,7 +77,7 @@ $secondary-font: "Rubik", sans-serif;
           button {
             font-size: 1.3rem;
             background-color: #ff7757;
-            border: none;
+            border: 3px solid transparent;
             border-radius: 10px;
             color: #fff;
             height: 30px;
@@ -92,10 +90,6 @@ $secondary-font: "Rubik", sans-serif;
             background-color: #ffd2c7;
             border: 3px solid #ff7757;
             color: #ff7757;
-            width: 130%;
-            height: 150%;
-            border-radius: 10px;
-            transition: 0.5s;
           }
         }
       }
@@ -123,10 +117,8 @@ $secondary-font: "Rubik", sans-serif;
       font-size: 1.2rem;
       font-family: $secondary-font;
     }
-  }
 
-  @include desktop {
-    .header-container {
+    @include desktop {
       width: 90%;
       justify-content: center;
       margin: 60px 0 40px;
@@ -179,20 +171,17 @@ $secondary-font: "Rubik", sans-serif;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #ffd2c7;
-        color: #ff7757;
-        font-size: 1.7;
-        border: 3px solid #ff7757;
-        transition: 0.5s;
+        &:hover {
+          background-color: #ffd2c7;
+          color: #ff7757;
+          font-size: 1.7;
+          border: 3px solid #ff7757;
+          transition: 0.5s;
+        }
       }
     }
-  }
 
-  @include desktop {
-    .booking-container {
+    @include desktop {
       flex-direction: row;
       width: 90%;
       height: 25%;
@@ -252,53 +241,51 @@ $secondary-font: "Rubik", sans-serif;
       margin-bottom: 20px;
     }
   }
-}
 
-.menu,
-.information,
-.contact-info,
-.social-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
-  height: 20%;
+  .menu,
+  .information,
+  .contact-info,
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    height: 20%;
 
-  h3 {
-    margin: 8px 0;
-    font-size: 1.5rem;
-    font-weight: bold;
+    h3 {
+      margin: 8px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
   }
-}
 
-.contact-info-list,
-.information-list,
-.menu-list {
-  font-size: 1.1rem;
-  padding: 8px 0;
-  line-height: 1.5;
+  .contact-info-list,
+  .information-list,
+  .menu-list {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    line-height: 1.5;
 
-  a {
-    text-decoration: none;
-    color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
-}
 
-.social-networks {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin: 20px;
-  width: 60%;
-  justify-content: space-around;
+  .social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px;
+    width: 60%;
+    justify-content: space-around;
 
-  img {
-    padding: 10px;
+    img {
+      padding: 10px;
+    }
   }
-}
 
-@include desktop {
-  .footer-container {
+  @include desktop {
     max-height: 40%;
     flex-direction: row;
     justify-content: space-evenly;
