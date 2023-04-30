@@ -198,7 +198,8 @@ html {
     cursor: pointer;
   }
   .nav-bar .nav-list ul .main-nav-items:hover {
-    border-bottom: 2px solid #ff7757;
+    text-decoration: underline #ff7757;
+    text-underline-offset: 0.5rem;
   }
   .nav-bar .nav-list ul button {
     font-size: 1.3rem;
@@ -233,6 +234,9 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
+  background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .web-container .header-container {
   display: flex;
@@ -391,6 +395,12 @@ html {
   padding: 8px 0;
   line-height: 1.5;
 }
+.contact-info-list a,
+.information-list a,
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .social-networks {
   display: flex;
@@ -424,9 +434,9 @@ html {
   .footer-container .contact-info-list,
   .footer-container .information-list,
   .footer-container .menu-list {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 8px 0;
-    line-height: 1.8;
+    line-height: 1.5;
   }
 }
 

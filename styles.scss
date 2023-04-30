@@ -61,7 +61,8 @@ $secondary-font: "Rubik", sans-serif;
         }
 
         .main-nav-items:hover {
-          border-bottom: 2px solid #ff7757;
+          text-decoration: underline #ff7757;
+          text-underline-offset: 0.5rem;
         }
 
         button {
@@ -104,6 +105,9 @@ $secondary-font: "Rubik", sans-serif;
   align-items: center;
   height: 100%;
   width: 100%;
+  background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .header-container {
     display: flex;
@@ -282,6 +286,11 @@ $secondary-font: "Rubik", sans-serif;
   font-size: 1.1rem;
   padding: 8px 0;
   line-height: 1.5;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .social-networks {
@@ -319,9 +328,9 @@ $secondary-font: "Rubik", sans-serif;
     .contact-info-list,
     .information-list,
     .menu-list {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 8px 0;
-      line-height: 1.8;
+      line-height: 1.5;
     }
   }
 }
