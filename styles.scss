@@ -229,6 +229,8 @@ $secondary-font: "Rubik", sans-serif;
 }
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   color: #fff;
   background-color: #172432;
@@ -246,7 +248,7 @@ $secondary-font: "Rubik", sans-serif;
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-star;
+  align-items: flex-start;
   margin: 20px;
   height: 20%;
 }
