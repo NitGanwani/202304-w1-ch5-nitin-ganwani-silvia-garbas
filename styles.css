@@ -154,54 +154,67 @@ html {
   background-size: cover;
   width: 100%;
 }
-
 @media only screen and (min-width: 1205px) {
   .city-image {
     height: 100%;
   }
 }
-.nav-bar {
+
+.web-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.web-container .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.nav-bar .nav-list {
+@media only screen and (min-width: 1205px) {
+  .web-container .nav-bar img {
+    max-width: 25%;
+    padding: 20px 0 0 20px;
+  }
+}
+.web-container .nav-bar .nav-list {
   display: none;
 }
-.nav-bar .nav-bar-logo {
-  display: flex;
-}
-.nav-bar img {
+.web-container .nav-bar img {
   max-width: 40%;
   padding: 10px 10px 0 10px;
 }
 @media only screen and (min-width: 1205px) {
-  .nav-bar .hamburger-image {
+  .web-container .nav-bar .hamburger-image {
     display: none;
   }
-  .nav-bar .nav-list {
+  .web-container .nav-bar .nav-list {
     display: flex;
     width: 50%;
     justify-content: space-around;
     align-items: center;
   }
-  .nav-bar .nav-list ul {
+  .web-container .nav-bar .nav-list ul {
     display: flex;
     flex-direction: row;
   }
-  .nav-bar .nav-list ul li {
+  .web-container .nav-bar .nav-list ul li {
     padding: 5px;
     margin: 10px;
     color: #fff;
     font-size: 1.2rem;
     cursor: pointer;
   }
-  .nav-bar .nav-list ul .main-nav-items:hover {
+  .web-container .nav-bar .nav-list ul .main-nav-items:hover {
     text-decoration: underline #ff7757;
     text-underline-offset: 0.5rem;
   }
-  .nav-bar .nav-list ul button {
+  .web-container .nav-bar .nav-list ul button {
     font-size: 1.3rem;
     background-color: #ff7757;
     border: none;
@@ -212,7 +225,7 @@ html {
     width: 120%;
     height: 130%;
   }
-  .nav-bar .nav-list ul button:hover {
+  .web-container .nav-bar .nav-list ul button:hover {
     background-color: #ffd2c7;
     border: 3px solid #ff7757;
     color: #ff7757;
@@ -220,23 +233,6 @@ html {
     height: 150%;
     border-radius: 10px;
   }
-}
-
-@media only screen and (min-width: 1205px) {
-  .nav-bar img {
-    max-width: 25%;
-    padding: 20px 0 0 20px;
-  }
-}
-.web-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .web-container .header-container {
   display: flex;
@@ -378,11 +374,10 @@ html {
   margin: 20px;
   height: 20%;
 }
-
-.information-title,
-.contact-info-title,
-.social-networks-title,
-.menu-title {
+.menu h3,
+.information h3,
+.contact-info h3,
+.social-container h3 {
   margin: 8px 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -412,10 +407,6 @@ html {
 }
 .social-networks img {
   padding: 10px;
-}
-
-.social-networks-title {
-  margin: 20px;
 }
 
 @media only screen and (min-width: 1205px) {

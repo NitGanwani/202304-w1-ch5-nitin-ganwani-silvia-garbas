@@ -10,92 +10,9 @@ $secondary-font: "Rubik", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
-
-@include desktop {
-  .city-image {
-    height: 100%;
-  }
-}
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-
-  .nav-list {
-    display: none;
-  }
-
-  .nav-bar-logo {
-    display: flex;
-  }
-
-  img {
-    max-width: 40%;
-    padding: 10px 10px 0 10px;
-  }
 
   @include desktop {
-    .hamburger-image {
-      display: none;
-    }
-
-    .nav-list {
-      display: flex;
-      width: 50%;
-      justify-content: space-around;
-      align-items: center;
-
-      ul {
-        display: flex;
-        flex-direction: row;
-
-        li {
-          padding: 5px;
-          margin: 10px;
-          color: #fff;
-          font-size: 1.2rem;
-          cursor: pointer;
-        }
-
-        .main-nav-items:hover {
-          text-decoration: underline #ff7757;
-          text-underline-offset: 0.5rem;
-        }
-
-        button {
-          font-size: 1.3rem;
-          background-color: #ff7757;
-          border: none;
-          border-radius: 10px;
-          color: #fff;
-          height: 30px;
-          cursor: pointer;
-          width: 120%;
-          height: 130%;
-        }
-
-        button:hover {
-          background-color: #ffd2c7;
-          border: 3px solid #ff7757;
-          color: #ff7757;
-          width: 130%;
-          height: 150%;
-          border-radius: 10px;
-        }
-      }
-    }
-  }
-}
-
-@include desktop {
-  .nav-bar {
-    img {
-      max-width: 25%;
-      padding: 20px 0 0 20px;
-    }
+    height: 100%;
   }
 }
 
@@ -108,6 +25,81 @@ $secondary-font: "Rubik", sans-serif;
   background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include desktop {
+      img {
+        max-width: 25%;
+        padding: 20px 0 0 20px;
+      }
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    img {
+      max-width: 40%;
+      padding: 10px 10px 0 10px;
+    }
+
+    @include desktop {
+      .hamburger-image {
+        display: none;
+      }
+
+      .nav-list {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+
+          li {
+            padding: 5px;
+            margin: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
+
+          .main-nav-items:hover {
+            text-decoration: underline #ff7757;
+            text-underline-offset: 0.5rem;
+          }
+
+          button {
+            font-size: 1.3rem;
+            background-color: #ff7757;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            height: 30px;
+            cursor: pointer;
+            width: 120%;
+            height: 130%;
+          }
+
+          button:hover {
+            background-color: #ffd2c7;
+            border: 3px solid #ff7757;
+            color: #ff7757;
+            width: 130%;
+            height: 150%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
 
   .header-container {
     display: flex;
@@ -269,15 +261,12 @@ $secondary-font: "Rubik", sans-serif;
   align-items: flex-start;
   margin: 20px;
   height: 20%;
-}
 
-.information-title,
-.contact-info-title,
-.social-networks-title,
-.menu-title {
-  margin: 8px 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  h3 {
+    margin: 8px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 .contact-info-list,
@@ -304,10 +293,6 @@ $secondary-font: "Rubik", sans-serif;
   img {
     padding: 10px;
   }
-}
-
-.social-networks-title {
-  margin: 20px;
 }
 
 @include desktop {
