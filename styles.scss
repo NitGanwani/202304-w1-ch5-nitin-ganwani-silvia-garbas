@@ -9,6 +9,7 @@ $secondary-font: "Rubik", sans-serif;
   background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 @include desktop {
@@ -20,6 +21,12 @@ $secondary-font: "Rubik", sans-serif;
 .nav-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .nav-list {
+    display: none;
+  }
 
   .nav-bar-logo {
     display: flex;
@@ -27,7 +34,58 @@ $secondary-font: "Rubik", sans-serif;
 
   img {
     max-width: 40%;
-    padding: 10px 0 0 10px;
+    padding: 10px 10px 0 10px;
+  }
+
+  @include desktop {
+    .hamburger-image {
+      display: none;
+    }
+
+    .nav-list {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      align-items: center;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          padding: 5px;
+          margin: 10px;
+          color: #fff;
+          font-size: 1.2rem;
+          cursor: pointer;
+        }
+
+        .main-nav-items:hover {
+          border-bottom: 2px solid #ff7757;
+        }
+
+        button {
+          font-size: 1.3rem;
+          background-color: #ff7757;
+          border: none;
+          border-radius: 10px;
+          color: #fff;
+          height: 30px;
+          cursor: pointer;
+          width: 120%;
+          height: 130%;
+        }
+
+        button:hover {
+          background-color: #ffd2c7;
+          border: 3px solid #ff7757;
+          color: #ff7757;
+          width: 130%;
+          height: 150%;
+          border-radius: 10px;
+        }
+      }
+    }
   }
 }
 
@@ -45,6 +103,7 @@ $secondary-font: "Rubik", sans-serif;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 100%;
 
   .header-container {
     display: flex;
@@ -124,6 +183,13 @@ $secondary-font: "Rubik", sans-serif;
         font-size: 1.5rem;
         cursor: pointer;
       }
+
+      button:hover {
+        background-color: #ffd2c7;
+        color: #ff7757;
+        font-size: 1.7;
+        border: 3px solid #ff7757;
+      }
     }
   }
 
@@ -162,23 +228,23 @@ $secondary-font: "Rubik", sans-serif;
   }
 }
 
-.footer-container{
+.footer-container {
   height: 100%;
-  color:#fff;
+  color: #fff;
   background-color: #172432;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .travellian-logo {
-    display: flex;
-    text-align: center;
-    padding: 2.6rem 1.3rem 0.6rem;
+  display: flex;
+  text-align: center;
+  padding: 2.6rem 1.3rem 0.6rem;
 }
 
-.menu, 
-.information, 
-.contact-info  {
-  display:flex;
+.menu,
+.information,
+.contact-info {
+  display: flex;
   flex-direction: column;
   align-items: flex-star;
   margin: 20px;
@@ -186,41 +252,39 @@ $secondary-font: "Rubik", sans-serif;
 }
 
 .information-title,
-.contact-info-title,  
-.social-networks-title, 
-.menu-title{
+.contact-info-title,
+.social-networks-title,
+.menu-title {
   margin: 8px 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.contact-info-list, .information-list, .menu-list{
+.contact-info-list,
+.information-list,
+.menu-list {
   font-size: 1.1rem;
   padding: 8px 0;
   line-height: 1.5;
-
 }
 
 .social-networks {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 20px;
-    width: 60%;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 20px;
+  width: 60%;
+  justify-content: space-around;
 }
 
 .copyright {
-    font-size: 0.7rem;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
-    margin-bottom: 20px;
-
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
-
 
 .social-networks-title {
   margin: 20px;
 }
-
