@@ -38,6 +38,10 @@ $secondary-font: "Rubik", sans-serif;
   }
 
   @include desktop {
+    .hamburger-image {
+      display: none;
+    }
+
     .nav-list {
       display: flex;
       width: 50%;

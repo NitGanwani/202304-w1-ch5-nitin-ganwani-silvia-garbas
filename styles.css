@@ -140,7 +140,7 @@ table {
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: 103%;
   margin: 0;
 }
 
@@ -177,6 +177,9 @@ html {
   padding: 10px 10px 0 10px;
 }
 @media only screen and (min-width: 1205px) {
+  .nav-bar .hamburger-image {
+    display: none;
+  }
   .nav-bar .nav-list {
     display: flex;
     width: 50%;
