@@ -232,6 +232,7 @@ html {
     width: 130%;
     height: 150%;
     border-radius: 10px;
+    transition: 0.5s;
   }
 }
 .web-container .header-container {
@@ -309,6 +310,7 @@ html {
   color: #ff7757;
   font-size: 1.7;
   border: 3px solid #ff7757;
+  transition: 0.5s;
 }
 @media only screen and (min-width: 1205px) {
   .web-container .booking-container {
