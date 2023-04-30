@@ -140,6 +140,7 @@ table {
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -147,12 +148,11 @@ html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/*<img src="/images/Vector.png" alt="travellian logo" width="20" height="25">
-        <img src="/images/Travellian.png" alt="travellian title logo" width="80" height="20">*/
 .city-image {
   background-image: url(/images/hallstatt-g5751a4938_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1205px) {
@@ -163,13 +163,59 @@ html {
 .nav-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-bar .nav-list {
+  display: none;
 }
 .nav-bar .nav-bar-logo {
   display: flex;
 }
 .nav-bar img {
   max-width: 40%;
-  padding: 10px 0 0 10px;
+  padding: 10px 10px 0 10px;
+}
+@media only screen and (min-width: 1205px) {
+  .nav-bar .nav-list {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-bar .nav-list ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .nav-list ul li {
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .nav-bar .nav-list ul .main-nav-items:hover {
+    border-bottom: 2px solid #ff7757;
+  }
+  .nav-bar .nav-list ul button {
+    font-size: 1.3rem;
+    background-color: #ff7757;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    height: 30px;
+    cursor: pointer;
+    width: 120%;
+    height: 130%;
+  }
+  .nav-bar .nav-list ul button:hover {
+    background-color: #ffd2c7;
+    border: 3px solid #ff7757;
+    color: #ff7757;
+    width: 130%;
+    height: 150%;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 1205px) {
@@ -183,6 +229,7 @@ html {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 .web-container .header-container {
   display: flex;
@@ -253,6 +300,12 @@ html {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.web-container .booking-container .booking-button button:hover {
+  background-color: #ffd2c7;
+  color: #ff7757;
+  font-size: 1.7;
+  border: 3px solid #ff7757;
 }
 @media only screen and (min-width: 1205px) {
   .web-container .booking-container {
