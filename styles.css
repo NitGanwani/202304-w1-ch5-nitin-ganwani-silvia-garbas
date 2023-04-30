@@ -361,41 +361,38 @@ html {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-
-.menu,
-.information,
-.contact-info,
-.social-container {
+.footer-container .menu,
+.footer-container .information,
+.footer-container .contact-info,
+.footer-container .social-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 20px;
   height: 20%;
 }
-.menu h3,
-.information h3,
-.contact-info h3,
-.social-container h3 {
+.footer-container .menu h3,
+.footer-container .information h3,
+.footer-container .contact-info h3,
+.footer-container .social-container h3 {
   margin: 8px 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.contact-info-list,
-.information-list,
-.menu-list {
+.footer-container .contact-info-list,
+.footer-container .information-list,
+.footer-container .menu-list {
   font-size: 1.1rem;
   padding: 8px 0;
   line-height: 1.5;
 }
-.contact-info-list a,
-.information-list a,
-.menu-list a {
+.footer-container .contact-info-list a,
+.footer-container .information-list a,
+.footer-container .menu-list a {
   text-decoration: none;
   color: #fff;
 }
-
-.social-networks {
+.footer-container .social-networks {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -403,10 +400,9 @@ html {
   width: 60%;
   justify-content: space-around;
 }
-.social-networks img {
+.footer-container .social-networks img {
   padding: 10px;
 }
-
 @media only screen and (min-width: 1205px) {
   .footer-container {
     max-height: 40%;
